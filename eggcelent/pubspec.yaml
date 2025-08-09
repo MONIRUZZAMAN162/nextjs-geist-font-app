@@ -1,0 +1,54 @@
+name: eggcelent
+description: A poultry farm e-commerce mobile application for buying and selling eggs and chicken products.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+  flutter: ">=3.10.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # Firebase
+  firebase_core: ^2.24.2
+  cloud_firestore: ^4.13.6
+  firebase_storage: ^11.6.0
+  firebase_messaging: ^14.7.10
+  
+  # UI & Charts
+  fl_chart: ^0.66.2
+  image_picker: ^1.0.4
+  
+  # State Management & Utils
+  provider: ^6.1.1
+  intl: ^0.19.0
+  cached_network_image: ^3.3.0
+  url_launcher: ^6.2.2
+  
+  # Icons
+  cupertino_icons: ^1.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+  
+  assets:
+    - assets/images/
+    - assets/icons/
+  
+  fonts:
+    - family: Poppins
+      fonts:
+        - asset: assets/fonts/Poppins-Regular.ttf
+        - asset: assets/fonts/Poppins-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Poppins-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/Poppins-Bold.ttf
+          weight: 700
